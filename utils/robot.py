@@ -15,11 +15,11 @@ class robot:
     
     def set(self, new_x, new_y, new_orientation):
         if new_x < 0 or new_x >= world_size:
-            raise ValueError, 'X coordinate out of bound'
+            raise ValueError('X coordinate out of bound')
         if new_y < 0 or new_y >= world_size:
-            raise ValueError, 'Y coordinate out of bound'
+            raise ValueError('Y coordinate out of bound')
         if new_orientation < 0 or new_orientation >= 2 * pi:
-            raise ValueError, 'Orientation must be in [0..2pi]'
+            raise ValueError('Orientation must be in [0..2pi]')
         self.x = float(new_x)
         self.y = float(new_y)
         self.orientation = float(new_orientation)
